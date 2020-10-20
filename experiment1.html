@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>experimental interface of decision wheel</title>
+</head>
+
+<body>
+    <div id="headerarea">
+        <h1 style="color: beige;">Decison Making Tool</h1>
+    </div>
+    <!------------------------------------div tag for buttons----------------------------------->
+    <div id="buttonarea">
+        <div id="buttons">
+            <button class="btn" id="b1" onclick="collectresponse(this)">Problem</button>
+            <button class="btn" id="b2" onclick="collectresponse(this)" disabled>Choices</button>
+            <button class="btn" id="b3" onclick="collectresponse(this)" disabled>Consequences</button>
+            <button class="btn" id="b4" onclick="collectresponse(this)" disabled>Values</button>
+            <button class="btn" id="b5" onclick="collectresponse(this)" disabled>Feelings</button>
+            <button class="btn" id="b6" onclick="collectresponse(this)" disabled>More Info</button>
+            <button class="btn" id="b7" onclick="collectresponse(this)" disabled>Who can help ?</button>
+            <button class="btn" id="b8" onclick="collectresponse(this)" disabled>Decision</button>
+            <button class="btn" id="b9" onclick="collectresponse(this)" disabled>Assess Decision</button>
+            <button class="btn" id="b10" onclick="reset()" disabled>Submit</button>
+        </div>
+    </div>
+    <!------------------------------------------------------------------------------------------>
+    <!----------------------------div tag to show functioning----------------------------------->
+    <div id="viewarea">
+        <!------------------------------modal for input-------------------------------->
+        <div id="userdataentrybox" style="display: none; text-align: center;">
+            <h3 id="iQuestion"></h3>
+            <div id="iContext"></div>
+            <br>
+            <textarea id="iResponse" style="text-align: center;" style="display: block;"></textarea>
+            <br>
+            <div style="text-align: center;">
+                <button class="ibtn" type="button" id="InputNewBtn" onclick="AddNew()" disabled> Add More </button>
+                <button class="ibtn" type="button" id="InputRemoveBtn" onclick="RemoveCurrent()" disabled> Remove
+                </button>
+                <button class="ibtn" type="button" id="InputPreviousBtn" onclick="ShowPrevious()" disabled> Previous
+                </button>
+                <button class="ibtn" type="button" id="InputNextBtn" onclick="ShowNext()" disabled>&nbsp; Next
+                    &nbsp;</button>
+                <button class="ibtn" type="button" id="s4" onclick="SubmitInput()"> Submit </button>
+            </div>
+        </div>
+        <!------------------------------------------------------------------>
+        <div id="permanentView">
+            <div style="background-color: rgba(255, 158, 31, 0.699); height: 8%; font-size: 3.5rem; font-weight: bold;">
+                Preview</div>
+            <!---------------------preview table-------------------->
+            <div id="myModal6" class="modal6">
+
+                <!-- Modal content -->
+                <div class="modal-content6">
+                    <span class="close6">&times;</span>
+                    <p class="out">
+                    <h3>PROBLEM :</h3>
+                    <P class="content" id="p1"></P>
+                    </p>
+                    <P class="out">
+                    <h3>CHOICES :</h3>
+                    <p class="content" id="pz"></p>
+                    <ul>
+                        <h3>CHOICE :</h3>
+                        <P class="content" id="p2"></P>
+                        <br>
+                        <h3>CONSEQUENCES :</h3>
+                        <P class="content" id="p31"></P>
+                        <P class="content" id="p32"></P>
+                        <P class="content" id="p33"></P>
+                        <br>
+                        <h3>VALUES :</h3>
+                        <P class="content" id="p41"></P>
+                        <P class="content" id="p42"></P>
+                        <P class="content" id="p43"></P>
+                        <br>
+                        <h3>FEELING :</h3>
+                        <P class="content" id="p5"></P>
+                    </ul>
+                    </P>
+                    <p class="out">
+                    <h3>MORE INFO :</h3>
+                    <P class="content" id="p6"></P>
+                    </p>
+                    <p class="out">
+                    <h3>WHO CAN HELP ? :</h3>
+                    <P class="content" id="p7"></P>
+                    </p>
+                    <p class="out">
+                    <h3>DECISION :</h3>
+                    <P class="content" id="p8"></P>
+                    </p>
+                    <p class="out">
+                    <h3>ASSES DECISION :</h3>
+                    <P class="content" id="p9"></P>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <!--------------------------------------------------------->
+    </div>
+    <!------------------------------------------------------------------------------------------->
+    <script src="experiment.js"></script>
+</body>
+
+</html>

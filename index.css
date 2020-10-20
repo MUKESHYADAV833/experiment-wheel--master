@@ -1,0 +1,144 @@
+@media only screen and (min-width:50 em)
+/*{for pc and Desktop}*/
+{
+
+}
+   #headachearea{
+        background-color: black;
+        text-align: center;
+        font-size: 3.2rem;
+    }
+    #buttonarea{
+        width: 24.5%;
+    height: 100%;
+    float: left;
+    background-color:rgba(18, 214, 204, 0.76);
+    text-align: center;
+
+    }
+    #viewarea{
+        height:1300px;
+        float: right;
+        width: 74.7%;
+        background-color:rgba(213,247,244,0.87);
+        text-align: center;
+    }
+    .button{
+        border-radius: 15px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        font-weight: bold;
+    }
+    .btn{
+        border: none;
+        display: block;
+        width: 90%;
+        padding: 40px 20px;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        margin: 18px 35px;
+        background-color:white;
+        border:2px solid #4CAF50;
+        border: 20px;
+    }
+    .btn:hover{
+        background-color:#4CAF50;
+        color: white;
+    }
+    #buttons{
+        text-align: center;
+        text-size-adjust: solid bold;
+
+    }
+    #iResponse{
+        font-size: 40px;
+        background-color: lightgrey;
+        width: 90%;
+        height: 100%;
+        border: 5px solid black;
+        padding: 70px;
+        margin: 50px;
+    }
+#InputNewBtn{
+    background-color: #4CAF50; /* Green */
+  border: 1px solid green;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  cursor: pointer;
+}
+#InputNewBtn:hover{
+    background-color:greenyellow;
+
+}
+#InputRemoveBtn{
+    background-color: #4CAF50; /* Green */
+  border: 1px solid green;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  cursor: pointer;
+}
+#InputRemoveBtn:hover{
+    background-color: greenyellow;
+}
+#InputPreviousBtn{
+    background-color: #4CAF50; /* Green */
+  border: 1px solid green;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+#InputPreviousBtn:hover{
+    background-color: greenyellow;
+}
+#InputNextBtn{
+background-color: #4CAF50; /* Green */
+  border: 1px solid green;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  cursor: pointer;
+}
+#InputNextBtn:hover{
+    background-color: greenyellow;
+}
+#s4{
+    background-color: #4CAF50; /* Green */
+  border: 1px solid green;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  cursor: pointer;
+}
+#s4:hover{
+    background-color: greenyellow;
+}
+#headerarea{
+    background-color: black;
+    font-size: 20px;
+    text-align: center;
+}
+#iQuestion{
+    font-size: 40px;
+}
