@@ -3,10 +3,13 @@
 {
 
 }
-   #headachearea{
+body{
+    background-color: rgb(104, 21, 93);
+}
+   #headerarea{
         background-color: black;
         text-align: center;
-        font-size: 3.2rem;
+        font-size: 1rem;
     }
     #buttonarea{
         width: 24.5%;
@@ -21,8 +24,19 @@
         float: right;
         width: 74.7%;
         background-color:rgba(213,247,244,0.87);
-        text-align: center;
+        text-align: left;
+        font-size: 30px;
     }
+    .previewviewarea{
+        /* margin: 12px; */
+        font-size: 1500px;
+        font-weight: bold;
+        background-color: rgba(255, 192, 155, 0.904);
+        display: inline;
+        text-align: left;
+        height: 100%;
+        }  
+
     .button{
         border-radius: 15px;
         background-color: #f2f2f2;
@@ -134,11 +148,25 @@ background-color: #4CAF50; /* Green */
 #s4:hover{
     background-color: greenyellow;
 }
-#headerarea{
-    background-color: black;
-    font-size: 20px;
-    text-align: center;
+
+#iQuestion{
+    font-size: 40px;
+}
+#p1{
+    text-align: left;
+}
+#myModal6{
+    text-align: left;
+    font-size: 25px;
+    line-height:1.8;
 }
 #iQuestion{
     font-size: 40px;
+}
+.content , h3{
+    display: inline-block;
+    margin: 1.4% 0.5%;
+}
+.out{
+    background-color: bisque;
 }

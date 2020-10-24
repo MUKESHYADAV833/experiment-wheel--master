@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>experimental interface of decision wheel</title>
+</head>
+
+<body>
+    <div id="headerarea">
+  <h1 style="color: beige;">Decison Making Tool</h1>
+    <div id="buttonarea">
+        <div id="buttons">
+            <button class="btn" id="b1" onclick="collectresponse(this)" >Problem</button>
+            <button class="btn" id="b2" onclick="collectresponse(this)" disabled>Choices</button>
+            <button class="btn" id="b3" onclick="collectresponse(this)" disabled>Consequences</button>
+            <button class="btn" id="b4" onclick="collectresponse(this)" disabled>Values</button>
+            <button class="btn" id="b5" onclick="collectresponse(this)" disabled>Feelings</button>
+            <button class="btn" id="b6" onclick="collectresponse(this)" disabled>More Info</button>
+            <button class="btn" id="b7" onclick="collectresponse(this)" disabled>Who can help ?</button>
+            <button class="btn" id="b8" onclick="collectresponse(this)" disabled>Decision</button>
+            <button class="btn" id="b9" onclick="collectresponse(this)" disabled>Assess Decision</button>
+            <button class="btn" id="b10" disabled>Submit</button>
+        </div>
+    </div>
+    <div id="viewarea">
+        <div id="previewviewarea">
+            <div   style="  background-color: rgb(241, 180, 88); text-align: center; font-size: 3rem;;height: 3%;">Preview</div>
+            <div class="out">
+                <h3>PROBLEM :</h3>
+                <P class="content" id="p1">fvcngvm</P>
+            </div >
+            <div id="z" class="out">
+                <button id="generate" onclick="dropchoices()" disabled><h3>CHOICES:</h3></button>
+              </div>
+            <div class="out">
+                <h3>CHOICE :</h3>
+                <P class="content" id="p2">ngv</P>
+            </div>
+            <div class="out">
+                <h3>CONSEQUENCES :</h3>
+                <P class="content" id="p3">fcjv</P>
+            </div>
+            <div class="out">
+                <h3>VALUES :</h3>
+                <P class="content" id="p4">fcjncf</P>
+            </div>
+            <div class="out">
+                <h3>FEELING :</h3>
+                <P class="content" id="p5">cffch</P>
+            </div>
+            <div class="out">
+                <h3>MORE INFO :</h3>
+                <P class="content" id="p6"></P>
+            </div>
+            <div class="out">
+                <h3>WHO CAN HELP ? :</h3>
+                <P class="content" id="p7">vcn</P>
+            </div>
+            <div class="out">
+                <h3>DECISION :</h3>
+                <P class="content" id="p8">cn</P>
+            </div>
+            <div class="out">
+                <h3>ASSES DECISION :</h3>
+                <P class="content" id="p9">cnvn</P>
+            </div>
+        </div>
+
+        <div id="userdataentrybox" style="display: none; text-align: center;">
+            <h3 id="iQuestion"></h3>
+            <div id="iContext"></div>
+            <br>
+            <textarea id="iResponse" style="text-align: center;" style="display: block;"></textarea>
+            <br>
+            <div style="text-align: center;">
+                <button class="ibtn" type="button" id="InputNewBtn" onclick="AddNew()" disabled> Add More </button>
+                <button class="ibtn" type="button" id="InputRemoveBtn" onclick="RemoveCurrent()" disabled> Remove
+                </button>
+                <button class="ibtn" type="button" id="InputPreviousBtn" onclick="ShowPrevious()" disabled> Previous
+                </button>
+                <button class="ibtn" type="button" id="InputNextBtn" onclick="ShowNext()" disabled>&nbsp; Next &nbsp;</button>
+                <button class="ibtn" type="button" id="s4" onclick="SubmitInput()"> Submit </button>
+            </div>
+        </div>
+    </div>
+    <script src="experiment1.js"></script>
+</body>
+</html>
